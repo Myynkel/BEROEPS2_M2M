@@ -1,0 +1,11 @@
+{
+    "name": "101342/beroeps2_m2m",
+    "autoload": {
+        "psr-4": {
+            "101342\\Beroeps2M2m\\": "src/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
