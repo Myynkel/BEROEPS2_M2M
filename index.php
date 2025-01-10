@@ -9,5 +9,6 @@ require_once CONFIG_PATH;
 require_once UTILS_PATH;
 
 // Laad de view
-require_once VIEW_PATH . '/index_view.php';
-?>
+include VIEW_PATH . '/index_view.php';
+
+

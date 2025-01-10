@@ -1,167 +1,122 @@
-/* Mobile-first CSS */
-* {
-    box-sizing: border-box;
+/* Algemene styling */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", serif;
+    background-color: #121212;
+    color: white;
 }
 
-body {
-    line-height: 1.6;
-}
-
-/* Navbar-stijl */
-nav{
+/* nav */
+nav {
     display: flex;
-    background-image: linear-gradient(rgb(255, 61, 61), rgb(243, 103, 103)) !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    background-color: #e63946;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 18px;
     font-weight: bold;
-    padding: 25px 40px 25px 50px;
+    padding: 15px 40px;
 }
 
-.nav-link{
-    padding: 0 50px;
-    margin-right: 30px;
+.nav-link {
+    padding: 0 20px;
+    margin-right: 15px;
     font-size: 16px;
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+    transition: color 0.3s;
+    text-align: center;
 }
 
-.navbar-nav .nav-link {
-    text-align: center;
-    position: relative;
-    padding-bottom: 5px;
-    transition: color 0.3s;
+.nav-link:hover {
+    color: #a30712;
 }
 
 .logo {
-    width: 40px;
+  height: 40px;
 }
 
-.navbar .navbar-brand {
+.header {
+    position: relative;
+    height: 100vh;
+    background: url("../img/background-img.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-
-
-@media (min-width: 769px) {
-    body {
-        display: none; /* Verbergt de inhoud op desktop en grotere apparaten */
-    }
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-
-/* font */
-.poppins-thin {
-    font-family: "Poppins", serif;
-    font-weight: 100;
-    font-style: normal;
+.header .container {
+    z-index: 2;
 }
 
-.poppins-extralight {
-    font-family: "Poppins", serif;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.poppins-light {
-    font-family: "Poppins", serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.poppins-regular {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.poppins-medium {
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-semibold {
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", serif;
+.header-title {
+    font-size: 3rem;
     font-weight: 700;
-    font-style: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.poppins-extrabold {
-    font-family: "Poppins", serif;
-    font-weight: 800;
-    font-style: normal;
-}
-
-.poppins-black {
-    font-family: "Poppins", serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.poppins-thin-italic {
-    font-family: "Poppins", serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.poppins-extralight-italic {
-    font-family: "Poppins", serif;
-    font-weight: 200;
-    font-style: italic;
-}
-
-.poppins-light-italic {
-    font-family: "Poppins", serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.poppins-regular-italic {
-    font-family: "Poppins", serif;
+.header-subtitle {
+    font-size: 1.2rem;
     font-weight: 400;
-    font-style: italic;
 }
 
-.poppins-medium-italic {
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.poppins-semibold-italic {
-    font-family: "Poppins", serif;
+.btn-primary {
+    background-color: #e63946;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
     font-weight: 600;
-    font-style: italic;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: background 0.3s ease;
 }
 
-.poppins-bold-italic {
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-style: italic;
+.btn-primary:hover {
+    background-color: #d62839;
 }
 
-.poppins-extrabold-italic {
-    font-family: "Poppins", serif;
-    font-weight: 800;
-    font-style: italic;
+.tracks h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
-.poppins-black-italic {
-    font-family: "Poppins", serif;
-    font-weight: 900;
-    font-style: italic;
+.list-group-item {
+    background-color: #2c2c2c;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
+.list-group-item:hover {
+    background-color: #444444;
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+    border-radius: 20px;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
