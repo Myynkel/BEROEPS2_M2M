@@ -2,6 +2,7 @@
 <html lang="nl">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JamLink - Muziek Platform</title>
@@ -13,9 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <img class="logo" src="../img/logo.png">
@@ -44,6 +47,7 @@
     </div>
 </header>
 
+
 <section id="tracks" class="tracks text-white mt-5 container">
     <h2 class="text-center mb-4">Top Tracks</h2>
     <ul class="list-group">
@@ -65,6 +69,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-</body>
 
+</body>
 </html>
